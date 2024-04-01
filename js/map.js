@@ -4,14 +4,6 @@ var mapOption = {
   level: 5, // 지도의 확대 레벨
 };
 // api.js
-import axios from "axios";
-
-const Kakao = axios.create({
-  baseURL: "https://dapi.kakao.com", // 공통 요청 경로를 지정해준다.
-  headers: {
-    Authorization: `KakaoAK ${process.env.REACT_APP_API_KEY}`,
-  },
-});
 
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
